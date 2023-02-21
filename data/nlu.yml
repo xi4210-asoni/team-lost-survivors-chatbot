@@ -1,0 +1,366 @@
+version: "2.0"
+
+nlu:
+- synonym: PF
+  examples: |
+    - Profident Fund
+
+- synonym: SL
+  examples: |
+    - Sick Leave
+
+- synonym: CL
+  examples: |
+    - Casual Leave
+
+- synonym: PL
+  examples: |
+    - Priviledge Leave
+
+- synonym: Resume
+  examples: |
+    - CV
+    - profile
+    - resume
+    - curriculum vitae
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi BotXe
+    - hello there
+    - good morning BotXe
+    - good evening
+    - BotXe
+    - BotXe are you there?
+    - hey there
+    - let's go
+    - hey dude
+    - hello madam
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - Thankx,thats it.
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: chitchat/Who_are_you
+  examples: |
+    - Who are you?
+    - What is your name?
+    - What should I call you?
+    - What Can I call you?
+    - Do you have a name?
+
+- intent: chitchat/bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Who created you?
+    - who made you?
+    - Are you alive?
+    
+- intent: faq/Holiday_list
+  examples: |
+    - How many holidays are available for associates in India?
+    - What is the total number of holidays?
+    - Are holidays different in different locatin of India?
+    - How many holidays do we have ?
+    - How many Holidays does Xebia have?
+    - Show the list of holidays.
+    - Where will I get Xebia Holiday Calendar for 2021?
+    - Do we have holliday on 
+    - Which is next  Holiday / Optional Holiday? 
+    - Tell me about holidas
+    - holidays
+    - give me the holiday list
+
+- intent: faq/FLholiday_process
+  examples: |
+    - What is the process to avail Floating Holiday?
+    - How to take a FL? 
+    - How to take a floating holiday?
+    - How to apply a floating holiday
+    - How to avail floating holiday?
+    - how to take a Floating Leave?
+
+- intent: faq/holiday_clinetSite
+  examples: |
+    - Which holiday calendar is applicable for associates working at client site?
+    - What do I do if Xebia has a holiday but the client does not?
+    - If I am in client site which holiday is applicable?
+
+- intent: faq/resign_leave_eligible
+  examples: |
+    - How many leaves can I avail during my notice period? 
+    - Can I take Leaves during my notice period? 
+    - What if I take leave after my resgination?
+    - Leave policy in notice period?
+    - Is it possible to take leave after I resign?
+    - Leave in notice period?
+
+- intent: faq/resign_notification
+  examples: |
+    - When will I get formal notification on LWD?
+    - What is my LWD?
+    - Information regarding last working day?
+    - Details about Last working day
+    - Till when am I supposed to work in Xebia after resigning?
+    - Last working day notification
+
+- intent: faq/resign_project
+  examples: |
+    - Project handover information?
+    - KT expectations after resignation / during notice period?
+    - Last date for project handover?
+    - Knowledge transfer after resgination?
+    - What are my responsibilites after resigning
+
+- intent: faq/resign_clearance_checklist
+  examples: |
+    - NOC procedure
+    - Whats the process of Xebia clearance checklist?
+    - Whom should I contact to get NOC after resignation?
+    - Whom should I handover company assets after I resign?
+    - Asset handover
+    - Xebia Clearance checklist
+
+- intent: faq/Xebia_alumni
+  examples: |
+    - How to join the Xebia alumni network?
+    - Details about Xebia alumni network?
+    - Xebia Alumni
+    - Alumnus Network of Xebia
+    - Procedure to get added to Xebia Alumni network?
+
+- intent: faq/resign_final_settlement
+  examples: |
+    - How much time does it take to get the the full and final settlement?
+    - Full and final settlement?
+    - Tentative data of final settlement amount
+    - When will I get the final settlement amount?
+    - When will I get the final payment?
+    - Payment of due amount?
+
+- intent: faq/resign_post_queries
+  examples: |
+    - Where can I get finance related info after resignation?
+    - Who is the point of contact from Xebia after regination?
+    - Whom to contact to get form-16/payslips after resigning?
+    - Post Exit queries
+    - To whom associate should connect for post exit queries? 
+
+- intent: faq/resign_gratuity_payment
+  examples: |
+    - Gratuity Payment
+    - Who is applicable to get gratuity payment?
+    - Am I elligible for gratuity payment?
+    - What is the criteria for Gratuity?
+    - Should I expect Gratuity bonus?
+    - what is the gratuity policy?
+
+- intent: faq/resign_PF_related
+  examples: |
+    - How to withdraw my PF amount?
+    - Where can I find my UAN number?
+    - How long it takes to withdraw my PF amount after resignation?
+    - Provident Fund?
+    - PF withdrawal
+    - Profident Fund withdrawal
+    - tell me about profident fund
+
+- intent: faq/resign_benefits_related
+  examples: |
+    - What will happen to my Insurance after resignation?
+    - Will my insurance benefits continue after resignation from Xebia?
+    - Medical Insurance after resination?
+    - Parental medical benefits post exit
+    - generic guidelines in case parental insurance post Exit? 
+    - generic guidelines in case parental insurance after resignation? 
+    - generic guidelines in case in-laws insurance post Exit? 
+
+- intent: faq/attendance_fill_timesheet
+  examples: |
+    - Where to fill Xebia timesheets?
+    - Who is the person who can tell me about Xebia timesheets? 
+    - How to fill Xebia timesheets? 
+    - Who is the person I should contact regarding filling Xebia timesheets?
+    - Tell me the person I should contact for Xebia timesheet details.
+    - Tell me the where to fill Xebia timesheets.
+
+- intent: faq/attendance_wrong_submission
+  examples: |
+    - I have enetered wrong hours in timesheet what to do next?
+    - Whom i should contact as I have mentioned wrong hours in timesheet?
+    - How to put correct time in timesheet as I have entered wrong timings?
+    - Tell me what to do as I have entered wrong hours in timesheet.
+    - Redo timesheet.
+
+- intent: faq/working_hours
+  examples: |
+    - What are the standard timings of Xebia? 
+    - What are office timings of Xebia? 
+    - How much time should an asssociate spend in office? 
+    - How many hours should an associate work in office? 
+    - Tell me the office timings.
+    - Tell me the working time of Xebia. 
+
+- intent: faq/leave_annual_calender
+  examples: |
+    - Whats is the leave calender of Xebia?
+    - What is the leave calendar year followed here?
+    - Leave calendar followed in Xebia yearly 
+    - What is the yearly leave calender followed in Xebia? 
+    - Annual leave calender in Xebia 
+
+- intent: faq/leave_PL
+  examples: |
+    - How many Priviledge Leave an associates are eligible during the year
+    - Priviledge Leave? 
+    - How many Priviledge leaves are applicable for an associates?
+    - Does PL carry forwarded? 
+    - How many PL  are carry forwarded?
+    - Details related to 
+
+- intent: faq/leave_CL
+  examples: |
+    - How many Casual Leave an associates are eligible during the year?
+    - How many CL max we can apply? 
+    - Casual Leave? 
+    - How many Casual leaves are applicable for an associates?
+    - Are CLs carry forwarded? 
+    - How many CLs are carry forwarded?
+
+- intent: faq/leave_SL
+  examples: |
+    - How many Sick Leaves are associates eligible during the year? 
+    - Tell me about Sick Leaves 
+    - How many Sick leaves are applicable for an associates?
+    - Are SLs carry forwarded? 
+    - How many SLs are carry forwarded?
+
+- intent: faq/leave_eligible_consultant
+  examples: |
+    - How many leaves are Xebia consultants eligible for?
+    - How many leaves are applicable to Xebia consultants?
+    - Leaves applicable for Xebia consultant 
+    - How many Leaves can I take as a consultant?
+    - If I am a consultant can I take leaves? 
+
+- intent: faq/leave_continuty
+  examples: |
+    - How many leaves an associate can avail at once? 
+    - How many conntinuous leave an associate can avail
+    - What is the maximum number of leaves I can avail?
+    - For how many days an I can take continuous leaves? 
+    - How many CL leaves an associate can avail at once? 
+    - What is the maximum number of days an associate can avail as CL?
+    - For how many days an associate can take continuous CL leaves? 
+    - Number of Continuous leaves applicable for an associate
+    - Number of Continuous casual leaves applicable for an associate. 
+
+- intent: faq/leave_advanced
+  examples: |
+    - How to apply for an advanced leave?
+    - What is the eligibility to apply for advance leaves?
+    - What types of leave can be considered as part of advance leave? 
+    - What are the different types of conditions that an associate can apply for advance leave? 
+    - What are the advance leaves
+    - Who can I apply for advance leave?
+    - Is advance leave applicable? 
+    - When can associates be eligible for advance leaves? 
+    - What are the advance leave policy rules?
+
+- intent: faq/Refer_how
+  examples: |
+    - How to refer someone?
+    - How associates should send referral to recruitment team?
+    - Where to put cv for referral?
+    - how to give referrral to someone new?
+    - Where to put resume for referral? 
+
+- intent: faq/Refer_bonus_eligible
+  examples: |
+    - Am I eligible referral bonus?
+    - referral bonus?
+    - When will I get the referral bonus? 
+
+- intent: faq/Xebia_wiki
+  examples: |
+    - Tell me about Xebia?
+    - tell me something about Xebia
+    - What do you know about our company?
+    - Tell me more about Xebia.
+    - Xebia
+
+- intent: faq/values
+  examples: |
+    - Tell me about values at xebia
+    - What are the values of xebia?
+    - Xebia values
+    - Core values of Xebia?
+    - How many values does Xebia have?
+
+- intent: faq/mission
+  examples: |
+    - Tell me about mission of xebia
+    - What is the mission of Xebia?
+    - Xebia Mission
+    - Mission of Xebia
+
+- intent: faq/principles
+  examples: |
+    - Tell me about principles of xebia
+    - What are the principles of xebia?
+    - Xebia principles
+    - principles of xebia
+
+- intent: faq/onboarding
+  examples: |
+    - Tell me about the onboarding process
+    - What is the onboarding process at xebia
+    - onboarding process              
+
+- intent: out_of_scope
+  examples: |
+    - Who is the new CEO?
+    - Who is the new VP?
+    - What is 2 + 2?
+    - What is espresso?
+    - Who is KK?
+    - Who owns Xebia now?
+    - Can I expect a salary hike?
+    - Can I be the next CEO?

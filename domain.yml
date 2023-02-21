@@ -1,0 +1,174 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - chitchat
+  - faq
+
+responses:
+  utter_greet:
+  - text: "Hey! I am BotXe, the HR chat-bot. I can help you with queries related to-
+        \nHolidays
+        \nLeaves
+        \nAttendance and Time Sheet
+        \nReferral 
+        \nResignation"
+  
+  utter_out_of_scope:
+  - text: Sorry! I can't handle that request.
+  - text: Sorry! not sure, I am new and still training.
+  - text: Sorry! I dont know the answer to this.
+
+  utter_nice_great:
+  - text: "Nice !!"
+  - text: "Amazing !!"
+  - text: "Great !!"
+
+  utter_how_can_help:
+  - text: "How can I help you?"
+
+  utter_handoff_next:
+  - text: "Right now we dont have a Human Handoff or Ticket Creation system in place
+           \nThey will be included in v.2
+           \nTill then - Patience is a Virtue"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_please_rephrase:
+  - text: "Sorry! Can you please rephrase your question?"
+
+  utter_chitchat/Who_are_you:
+  - text: "I am BotXe, the HR chatbot!! How can I help you?" 
+  
+  utter_chitchat/bot_challenge:
+  - text: "I am a bot !! Created by team 'The Lost Survivours' "
+
+  utter_faq/Holiday_list:
+  - text: "Here is the list of all holidays!! \n[HolidayList]"
+
+  utter_faq/FLholiday_process:
+  - text: "Please apply on the ZOHO portal with prior approval from the Project Manager and Mentor."
+
+  utter_faq/holiday_clinetSite:
+  - text: "Client holiday calendar will be application for associates working at client site."
+
+  utter_faq/resign_leave_eligible:
+  - text: "Associates are not encouraged to take leave in notice period. You can still refer to the leave policy handbook for more details: Leave Policy Handbook PDF
+          For more info mail to human_resources@Xebia.com"
+  
+  utter_faq/resign_notification:
+  - text: "After getting formal approval from Leadership, HR-Ops will communicate the LWD to resigned associate if the resignation is confirmed. (preferably within 30 days from the date of resignation)"
+
+  utter_faq/resign_project:
+  - text: "Ideally, you are expected to complete the project hand over, knowledge transfer at least one day prior to actual LWD."
+
+  utter_faq/resign_clearance_checklist:
+  - text: "Due to the pandemic situation HR Ops will get the following clearance from the respective stakeholder-
+          \nProject Manager
+          \nIT
+          \nAdmin
+          \nRMG
+          \nFinance
+          \nCompliance
+          \nSocial Media Undertaking (Mandatory)"
+
+  utter_faq/Xebia_alumni:
+  - text: "Please notify HR Ops representative during exit interview or write to us at alumni@Xebia.com so that we can add you to our Alumni Network."
+  
+  utter_faq/resign_final_settlement:
+  - text: "On successful completion of asset handover, the full and final settlement will be disbursed along with the upcoming pay cycle (On the first day of the next month)"
+  
+  utter_faq/resign_post_queries:
+  - text: "Please write to finance team at finance@Xebia.com For any query related to full and final settlement, Form-16, Payslip, Sodexo
+          \nfor query related to Leave, Medical Insurance, statutory compliance like EPF, Gratuity etc. and any other concern, contact at human_resources@Xebia.com "
+        
+  utter_faq/resign_gratuity_payment:
+  - text: "Gratuity is only applicable to those who have worked 5 years or more in the organisation (without any break-in service)."
+
+  utter_faq/resign_PF_related:
+  - text: "Employees Provident Fund - You can find the UAN no in Payslip. The provident fund amount can be withdrawn after 2 months from date of release if you are not continuing the account further. The date of exit will be updated from Xebia within this period of time."
+
+  utter_faq/resign_benefits_related:
+  - text: "Our group health insurance coverage will be applicable until LWD. The prorated premium will be refunded for those who have added parents/in-laws & does not have any claim for the current year."
+
+  utter_faq/attendance_fill_timesheet:
+  - text: "Please refer to the appropriate People Business Partner who will generate the needed access to the internal timesheets"
+
+  utter_faq/attendance_wrong_submission:
+  - text: "Please email the following teams to correct the error:
+          \nHuman_resources@Xebia.com"
+
+  utter_faq/working_hours:
+  - text: "Usually in India its 9.30 A.M. to 6.30 P.M. From Monday to Friday. However, it may change based on business / project need and you should be available in our peak business hours i.e. 10AM to 4PM." 
+
+  utter_faq/leave_annual_calender:
+  - text: "The Leave Calendar is from 1 Jan to 31 Dec."
+   
+  utter_faq/leave_PL:
+  - text: "Total PL(s)- 15. But for new joiners' leaves are allotted on pro rata basis considering date of joining. At max 7 of such leaves are carried forward to the next year."
+    
+  utter_faq/leave_CL:
+  - text: "Total CL(s)- 10. But for new joiners' leaves are allotted on pro rata basis considering date of joining. Such leaves are not carried forward to the next year."
+    
+  utter_faq/leave_SL:
+  - text: "Total SL(s)-3. Also, sick Leaves are carried forward and maximum accumulation is 56." 
+  
+  utter_faq/leave_eligible_consultant:
+  - text: "Consultants on direct contract are eligible for 1 day leave in a month, 12 days leave in a year on pro rata basis depending on date of joining. Such leaves can't be carried forward to the next year."
+    
+  utter_faq/leave_continuty:
+  - text: "15 days of continuous leaves can be availed. However, total 3 days of continuous Casual Leaves are permissible."
+  
+  utter_faq/leave_advanced:
+  - text: "Associates are eligible for advance Privilege Leaves based on the following conditions-
+        \n1. Marriage of the associate applying for leave
+        \n2. Serious illness of the associate (supported with Doctor’s prescription / certificate)
+        \n3. Death in the immediate family
+        \n4. Major natural calamity leading to loss of property."
+
+  utter_faq/Refer_how:
+  - text: "All referral requests should be made through the incident management platform -JIRA by raising tickets, as a response to the job postings available on Xebia website, or mailers sent by the Recruitment team. While making requests for referral, it is necessary to attach the resume of the candidate being referred."
+
+  utter_faq/Refer_bonus_eligible:
+  - text: "For any doubt related to referral bonus, please visit page 13 of the associate handbook.
+        \n[Handbook]"
+
+  utter_faq/Xebia_wiki:
+  - text: "Please refer to our offcial [website](https://Xebia.com/)"
+
+  utter_faq/values:
+  - text: "At Xebia we have four core values :
+        \n1. People First
+        \n2. Sharing Knowledge
+        \n3. Quality Without Compromise
+        \n4. Customer Intimacy"
+
+  utter_faq/mission:
+  - text: "Authority is our Mission"
+
+  utter_faq/principles:
+  - text: "We have four principles at Xebia 
+        \n1. Responsibility 
+        \n2. Urgency 
+        \n3. Results 
+        \n4. Entrepreneurship and Innovation"
+
+  utter_faq/onboarding:
+  - text: "For Onboarding process the documents required are :
+        \n1. Id Proof
+        \n2. Passport size photos
+        \n3. Educational Certificates
+        \n4. Medical certificate
+        \n For more information contact HR@xebia.com"           
+  
+session_config:
+  session_expiration_time: 20
+  carry_over_slots_to_new_session: true
